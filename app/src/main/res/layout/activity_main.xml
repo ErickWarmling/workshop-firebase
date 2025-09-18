@@ -37,7 +37,7 @@
             android:layout_marginBottom="8dp"
             android:text="E-mail"
             android:textColor="#FFFFFF"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress5"
@@ -53,9 +53,10 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:text="Senha"
             android:textColor="#FFFFFF"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/editTextNumberPassword3"
@@ -72,6 +73,7 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:backgroundTint="#EE872B"
             android:text="Entrar" />
 
         <TextView
