@@ -5,10 +5,12 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
     android:orientation="vertical"
-    tools:context=".CadastroUsuario" >
+    tools:context=".CadastroUsuario">
 
     <LinearLayout
+        android:id="@+id/linearLayoutCabecalho"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0D3B66"
@@ -17,14 +19,16 @@
         android:padding="10dp">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageViewSetaVoltar"
             android:layout_width="32dp"
             android:layout_height="32dp"
+            android:clickable="true"
             android:contentDescription="Voltar"
+            android:focusable="true"
             android:src="@drawable/arrow_back_24dp_ffffff_fill0_wght400_grad0_opsz24" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tvTituloCabecalho"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -36,13 +40,14 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayoutFormulario"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="24dp">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tvNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -50,7 +55,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/edNome"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="16dp"
@@ -61,7 +66,7 @@
             android:padding="12dp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tvTelefone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -69,7 +74,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/edTelefone"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="16dp"
@@ -80,7 +85,7 @@
             android:padding="12dp" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/tvEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -88,7 +93,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/edEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -99,7 +104,7 @@
             android:padding="12dp" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/tvSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="8dp"
@@ -107,7 +112,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/edSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -118,7 +123,7 @@
             android:padding="12dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnCadastrar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:backgroundTint="#EE872B"

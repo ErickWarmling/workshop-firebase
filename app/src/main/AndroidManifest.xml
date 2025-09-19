@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Workshopfirebase">
         <activity
+            android:name=".TelaPrincipal"
+            android:exported="false" />
+        <activity
             android:name=".CadastroUsuario"
             android:exported="true" />
         <activity
