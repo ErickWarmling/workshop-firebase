@@ -71,6 +71,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        edEmail.setText("");
+        edSenha.setText("");
+    }
+
     private void abrirTelaPrincipal() {
         Intent intent = new Intent(MainActivity.this, TelaPrincipal.class);
         startActivity(intent);
