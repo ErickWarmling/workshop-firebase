@@ -76,8 +76,8 @@ public class TelaPrincipal extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 Usuario usuario = snapshot.getValue(Usuario.class);
                 if (usuario != null) {
-                    tvNome.setText(usuario.getNome());
-                    tvEmail.setText(usuario.getEmail());
+                    tvNome.setText(getString(R.string.usuario_nome, usuario.getNome()));
+                    tvEmail.setText(getString(R.string.usuario_email, usuario.getEmail()));
                 }
             }
 

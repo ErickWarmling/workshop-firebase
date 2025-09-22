@@ -41,6 +41,7 @@ dependencies {
     implementation(libs.firebase.common)
     implementation(libs.firebase.database)
     implementation(libs.firebase.messaging)
+    implementation(libs.cardview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
