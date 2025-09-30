@@ -45,9 +45,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation(platform("com.google.firebase:firebase-bom:34.2.0"))
-    implementation("com.google.firebase:firebase-common-ktx:21.0.0")
-    implementation("com.google.firebase:firebase-auth:24.0.1")
-    implementation("com.google.firebase:firebase-database:22.0.1")
-    implementation("com.google.firebase:firebase-messaging:25.0.1")
+    implementation(platform("com.google.firebase:firebase-bom:34.3.0"))
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-messaging")
 }
